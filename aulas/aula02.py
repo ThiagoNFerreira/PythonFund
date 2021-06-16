@@ -14,7 +14,7 @@
 # print(caixaBaixa)
 # print(dividindoTexto)
 
-# # Indexação de String
+## Indexação de String
 
 # texto2 = "Apenas uma string"
 # print(texto2[4])
