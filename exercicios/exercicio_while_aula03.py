@@ -13,13 +13,13 @@ while True:
     opcao = int(input(">>> "))
 
     if opcao == 1:
-        print (f"Seu nome é {nome}, sua idade é {idade}, seu e-mail é {email} e seu telefone é {telefone}")
+        print (f"Seu nome é {nome}\nSua idade é {idade} \nSeu e-mail é {email} \nSeu telefone é {telefone}")
         break
     elif opcao == 2:
-        print (f"Seu nome é {nome} e sua idade é {idade}.")
+        print (f"Seu nome é {nome}\nSua idade é {idade}.")
         break
     elif opcao == 3:
-        print (f"Seu e-mail é {email} e seu telefone é {telefone}.")
+        print (f"Seu e-mail é {email}\nSeu telefone é {telefone}.")
         break
     elif opcao == 0:
         break
