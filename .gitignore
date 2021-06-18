@@ -1,2 +1,4 @@
 venv2
 .vscode
+_pycache_
+__pycache__
