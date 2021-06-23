@@ -1,0 +1,5 @@
+{
+    "nome":  "Carlos",
+    "idade": 38,
+    "bens": ["carro xpto"]
+}

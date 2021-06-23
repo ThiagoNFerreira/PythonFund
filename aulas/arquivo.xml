@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<partida>
+    <ano>2002</ano>
+    <estado>SP</estado>
+    <estádio>Morumbi</estádio>
+    <times>
+        <time nome="Palmeiras">
+            <jogador1>Magrao</jogador1>
+            <jogador2>Claudecir></jogador2>
+            <jogador3>Alex</jogador3>
+            <jogador4>Arce</jogador4>
+        </time>
+        <time nome="São Paulo">
+            <jogador1>França</jogador1>
+            <jogador2>Kaká</jogador2>
+        </time>a
+    </times>
+</partida>
