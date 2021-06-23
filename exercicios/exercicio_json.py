@@ -10,21 +10,13 @@ import requests
 #from typing import Text
 
 
-cep = input("Informe o CEP: ")
-
-def consultaCEP(cep):
-    viacep = f'https://viacep.com.br/ws/{cep}/json'
-    req = requests.get(viacep)
-    conteudo = json.loads(req.content)
-    print(conteudo)
-
 def main():
     while True:
-        infCEP = ("Informe um CEP: ")
+        infCEP = input("Informe um CEP: ")
         consulta = consultaCEP(infCEP)
-        print('1 - Consultar Rua')
+        print('1 - Consultar Tudo')
         print('2 - Consultar Bairro')
-        print('3 - Consultar Tudo')
+        print('3 - Consultar Rua')
         print('4 - Sair')
         opcao = input('>>>>')
 
@@ -40,11 +32,17 @@ def main():
             print('Busca Inválida')
 
 
+def consultaCEP(cep):
+    viacep = f'https://viacep.com.br/ws/{cep}/json'
+    req = requests.get(viacep).text
+    return req
 
 
 
+main()
 
-def informaRua():
+
+
 
 
     
