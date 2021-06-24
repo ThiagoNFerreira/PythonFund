@@ -15,18 +15,18 @@ def main():
         infCEP = input("Informe um CEP: ")
         consulta = consultaCEP(infCEP)
         print('1 - Consultar Tudo')
-        print('2 - Consultar Bairro')
-        print('3 - Consultar Rua')
+        print('2 - Consultar Rua')
+        print('3 - Consultar Bairro')
         print('4 - Sair')
-        opcao = input('>>>>')
+        opcao = int(input('>>>>'))
 
-        if opcao == '1':
+        if opcao == 1:
             print(consulta)
-        elif opcao == '2':
-            print(consulta['lograduro'])
-        elif opcao == '3':
-            print(consulta['bairro'])
-        elif opcao == '4':
+        elif opcao == 2:
+            print(consulta["logradouro"])
+        elif opcao == 3:
+            print(consulta["bairro"])
+        elif opcao == 4:
             break
         else:
             print('Busca Inválida')
@@ -35,7 +35,8 @@ def main():
 def consultaCEP(cep):
     viacep = f'https://viacep.com.br/ws/{cep}/json'
     req = requests.get(viacep).text
-    return req
+    reqjson = json.loads(req)
+    return reqjson
 
 
 
