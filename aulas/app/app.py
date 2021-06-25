@@ -1,14 +1,14 @@
-import e_comerce
+import e_commerce
 
-# Instâncias
+# Instancias
+item01 = e_commerce.Item('Camiseta Corinthinas', preco=159)
+item02 = e_commerce.Item('Camiseta Xadrex', preco=99)
+item03 = e_commerce.Item('Caneca Bob Sponja', preco=199)
+cliente01 = e_commerce.Cliente()
 
-item01 = e_comerce.Item('Camiseta São Paulo', preco=159)
-item02 = e_comerce.Item('Camiseta Xadrex', preco=99)
-item03 = e_comerce.Item('Camiseta Bob Esponja', preco=80)
-cliente01 = e_comerce.cliente()
 
-cliente01.adiciona_item(item01)
-cliente01.adiciona_item(item02)
-cliente01.adiciona_item(item03)
+cliente01.adiciona_item(item02.make_item())
+cliente01.adiciona_item(item02.make_item())
+cliente01.adiciona_item(item03.make_item())
 
-print(cliente01.consolidar_carrinho())
+print(cliente01.consolidar_compra())
